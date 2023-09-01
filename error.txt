@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\GitHub\salesbot>python vac_trial.py
+Recording...
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Documents\GitHub\salesbot\vac_trial.py", line 19, in <module>
+    sd.rec(audio_data, samplerate=RATE, channels=CHANNELS)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\site-packages\sounddevice.py", line 268, in rec
+    out, ctx.frames = ctx.check_out(out, frames, channels, dtype, mapping)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\site-packages\sounddevice.py", line 2520, in check_out
+    out = np.empty((frames, channels), dtype, order='C')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: only integer scalar arrays can be converted to a scalar index
