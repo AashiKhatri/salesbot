@@ -11,6 +11,11 @@ DTYPE = np.int16
 SECONDS = 5      # length of recording
 FILENAME = "output.wav"  # name of output file
 
+print(f"RATE = {RATE}, SECONDS = {SECONDS}, CHANNELS = {CHANNELS}")
+RATE = int(RATE)
+SECONDS = int(SECONDS)
+CHANNELS = int(CHANNELS)
+
 # Initialize array to hold audio
 try:
     audio_data = np.empty((RATE * SECONDS, CHANNELS), dtype=DTYPE)
